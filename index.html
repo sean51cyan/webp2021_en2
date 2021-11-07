@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>演習2</title>
+
+    <!-- スタイルシート-->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1 class="headline">
+            <p>HTMLの要素解説</p>
+        </h1>
+    </header>
+
+    <!-- サイトの中身部分 -->
+    <div>
+        <p id="overview">
+            このWEBページではHTMLで用いる <code><strong>header</strong></code>要素,
+            <code><strong>footer</strong></code>要素,
+            <code><strong>pre</strong></code>要素 について解説をしていきます。
+        </p>
+    </div>
+    <div class="index">
+        <h2>目次</h2>
+        <ul class="page-contents">
+            <li><a href="#i1">header</a></li>
+            <li><a href="#i2">footer</a></li>
+            <li><a href="#i3">pre</a></li>
+        </ul>
+    </div>
+    <div class="maintopic">
+        <div class="contents">
+            <h3 class="subhead" id="i1">header要素</h3>
+            <p>この要素はWEBページの最上部に存在するヘッダーを作る時に用いるものです。</p>
+            <p>ヘッダーWEBページの上部の事であり、常にどのページでも表示される部分です。</p>
+            <p>主な使われ方としては、WEBページのタイトルなど企業名やWEBページ上のコンテンツへのリンク、メニュー等を記載されています。</p>
+
+            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YzxaeRo"
+                data-preview="true" data-user="sean51cyan"
+                style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/sean51cyan/pen/YzxaeRo">
+                        Untitled</a> by sean51cyan (<a href="https://codepen.io/sean51cyan">@sean51cyan</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+
+        <div class="contents">
+            <h3 class="subhead" id="i2">footer要素</h3>
+            <p>この要素はWEBページの下部に存在するフッターを作る時に用いるものです。</p>
+            <p>ヘッダーWEBページの下部の事であり、headerと同じで常にどのページでも表示される部分です。</p>
+            <p>主な使われ方としては、企業の代表的な画像や、お問い合わせページをおいておく事があります。</p>
+
+            <p class="example">実装例</p>
+            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bGrvLRV"
+                data-preview="true" data-user="sean51cyan"
+                style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/sean51cyan/pen/bGrvLRV">
+                        Untitled</a> by sean51cyan (<a href="https://codepen.io/sean51cyan">@sean51cyan</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+        </div>
+
+        <div class="contents">
+            <h3 class="subhead" id="i3">pre要素</h3>
+            <p>preタグ「Preformatted Text」の略で、成形済みテキストを意味します。これはpreタグで囲まれた部分をソースにあるままHTMLに出力するときに使うものです。</p>
+            <p>しかし、ソースのままとはいっても &lt; や &gt; のような文字は特殊文字なのでそのまま入力してしまうとタグとして扱われてしまいます。そこで、実体参照という方法を使って表示します。</p>
+            <p>実体参照とは、定義された名前から文字を表示させる方法のことです。例えば、<strong>&lt;</strong> は「&amp;lt;」<strong>&gt;</strong> は
+                「&amp;gt;」というようにすることによって表示させることが出来ます。</p>
+            <p>主な使われ方としては、ソースのまま表示させることが出来るという部分で、codeタグと一緒に用いられます。これはインデントの最初のスペースを消さずに表示できるからです。</p>
+
+            <p class="example">実装例</p>
+            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="rNzdrzo"
+                data-preview="true" data-user="sean51cyan"
+                style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/sean51cyan/pen/rNzdrzo">
+                        Untitled</a> by sean51cyan (<a href="https://codepen.io/sean51cyan">@sean51cyan</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <p>5420057　山田裕斗<br>
+            日本大学文理学部情報科学科 Webプログラミングの演習課題
+        </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+
+</html>
